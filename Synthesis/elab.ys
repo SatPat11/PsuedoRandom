@@ -1,0 +1,3 @@
+# elab.ys - Elaboration script
+read_verilog linttest.v
+hierarchy -top lfsr_axi_top
