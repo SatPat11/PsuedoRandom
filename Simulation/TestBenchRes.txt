@@ -1,0 +1,194 @@
+=== LFSR AXI Test Started ===
+
+--- Test 1: Register Access ---
+[45000] LFSR_out=0x19, enable=0, load=0
+[55000] WRITE START: Addr=0x0, Data=0x00
+[55000] LFSR_out=0x19, enable=0, load=0
+[65000] LFSR_out=0x19, enable=0, load=0
+[75000] LFSR_out=0x19, enable=0, load=0
+[85000] WRITE DONE: Addr=0x0, Data=0x00, Resp=00
+[85000] LFSR_out=0x19, enable=0, load=0
+[95000] WRITE START: Addr=0x4, Data=0xa5
+[95000] LFSR_out=0x19, enable=0, load=0
+[105000] LFSR_out=0x19, enable=0, load=0
+[115000] LFSR_out=0x19, enable=0, load=0
+[125000] WRITE DONE: Addr=0x4, Data=0xa5, Resp=00
+[125000] LFSR_out=0x19, enable=0, load=0
+[135000] WRITE START: Addr=0x8, Data=0xb4
+[135000] LFSR_out=0x19, enable=0, load=0
+[145000] LFSR_out=0x19, enable=0, load=0
+[155000] LFSR_out=0x19, enable=0, load=0
+[165000] WRITE DONE: Addr=0x8, Data=0xb4, Resp=00
+[165000] LFSR_out=0x19, enable=0, load=0
+[175000] LFSR_out=0x19, enable=0, load=0
+[185000] LFSR_out=0x19, enable=0, load=0
+[195000] READ:  Addr=0x0, Data=0x00
+[195000] LFSR_out=0x19, enable=0, load=0
+[205000] LFSR_out=0x19, enable=0, load=0
+[215000] LFSR_out=0x19, enable=0, load=0
+[225000] READ:  Addr=0x4, Data=0xa5
+[225000] LFSR_out=0x19, enable=0, load=0
+[235000] LFSR_out=0x19, enable=0, load=0
+[245000] LFSR_out=0x19, enable=0, load=0
+[255000] READ:  Addr=0x8, Data=0xb4
+[255000] LFSR_out=0x19, enable=0, load=0
+
+--- Test 2: Load Seed ---
+[265000] WRITE START: Addr=0x0, Data=0x02
+[265000] LFSR_out=0x19, enable=0, load=0
+[275000] LFSR_out=0x19, enable=0, load=0
+[285000] LFSR_out=0x19, enable=0, load=0
+[295000] WRITE DONE: Addr=0x0, Data=0x02, Resp=00
+[295000] LFSR_out=0x19, enable=0, load=1
+[305000] LFSR_out=0xa5, enable=0, load=1
+[315000] LFSR_out=0xa5, enable=0, load=1
+[325000] WRITE START: Addr=0x0, Data=0x00
+[325000] LFSR_out=0xa5, enable=0, load=1
+[335000] LFSR_out=0xa5, enable=0, load=1
+[345000] LFSR_out=0xa5, enable=0, load=1
+[355000] WRITE DONE: Addr=0x0, Data=0x00, Resp=00
+[355000] LFSR_out=0xa5, enable=0, load=0
+[365000] LFSR_out=0xa5, enable=0, load=0
+[375000] LFSR_out=0xa5, enable=0, load=0
+[385000] READ:  Addr=0xc, Data=0xa5
+[385000] LFSR_out=0xa5, enable=0, load=0
+
+--- Test 3: LFSR Sequence ---
+[395000] WRITE START: Addr=0x0, Data=0x01
+[395000] LFSR_out=0xa5, enable=0, load=0
+[405000] LFSR_out=0xa5, enable=0, load=0
+[415000] LFSR_out=0xa5, enable=0, load=0
+[425000] WRITE DONE: Addr=0x0, Data=0x01, Resp=00
+[425000] LFSR_out=0xa5, enable=1, load=0
+[435000] LFSR_out=0x4b, enable=1, load=0
+[445000] LFSR_out=0x96, enable=1, load=0
+[455000] LFSR_out=0x2d, enable=1, load=0
+[465000] LFSR_out=0x5a, enable=1, load=0
+[475000] READ:  Addr=0xc, Data=0x5a
+[475000] LFSR_out=0xb5, enable=1, load=0
+[485000] LFSR_out=0x6a, enable=1, load=0
+[495000] LFSR_out=0xd5, enable=1, load=0
+[505000] LFSR_out=0xab, enable=1, load=0
+[515000] LFSR_out=0x56, enable=1, load=0
+[525000] READ:  Addr=0xc, Data=0x56
+[525000] LFSR_out=0xac, enable=1, load=0
+[535000] LFSR_out=0x59, enable=1, load=0
+[545000] LFSR_out=0xb3, enable=1, load=0
+[555000] LFSR_out=0x67, enable=1, load=0
+[565000] LFSR_out=0xce, enable=1, load=0
+[575000] READ:  Addr=0xc, Data=0xce
+[575000] LFSR_out=0x9c, enable=1, load=0
+[585000] LFSR_out=0x39, enable=1, load=0
+[595000] LFSR_out=0x72, enable=1, load=0
+[605000] LFSR_out=0xe4, enable=1, load=0
+[615000] LFSR_out=0xc9, enable=1, load=0
+[625000] READ:  Addr=0xc, Data=0xc9
+[625000] LFSR_out=0x93, enable=1, load=0
+[635000] LFSR_out=0x26, enable=1, load=0
+[645000] LFSR_out=0x4c, enable=1, load=0
+[655000] LFSR_out=0x99, enable=1, load=0
+[665000] LFSR_out=0x32, enable=1, load=0
+[675000] READ:  Addr=0xc, Data=0x32
+[675000] LFSR_out=0x64, enable=1, load=0
+[685000] LFSR_out=0xc8, enable=1, load=0
+[695000] LFSR_out=0x91, enable=1, load=0
+[705000] LFSR_out=0x22, enable=1, load=0
+[715000] LFSR_out=0x45, enable=1, load=0
+[725000] READ:  Addr=0xc, Data=0x45
+[725000] LFSR_out=0x8b, enable=1, load=0
+[735000] LFSR_out=0x17, enable=1, load=0
+[745000] LFSR_out=0x2e, enable=1, load=0
+[755000] LFSR_out=0x5c, enable=1, load=0
+[765000] LFSR_out=0xb8, enable=1, load=0
+[775000] READ:  Addr=0xc, Data=0xb8
+[775000] LFSR_out=0x71, enable=1, load=0
+[785000] LFSR_out=0xe2, enable=1, load=0
+[795000] LFSR_out=0xc4, enable=1, load=0
+[805000] LFSR_out=0x88, enable=1, load=0
+[815000] LFSR_out=0x11, enable=1, load=0
+[825000] READ:  Addr=0xc, Data=0x11
+[825000] LFSR_out=0x23, enable=1, load=0
+[835000] LFSR_out=0x47, enable=1, load=0
+[845000] LFSR_out=0x8f, enable=1, load=0
+[855000] LFSR_out=0x1e, enable=1, load=0
+[865000] LFSR_out=0x3c, enable=1, load=0
+[875000] READ:  Addr=0xc, Data=0x3c
+[875000] LFSR_out=0x79, enable=1, load=0
+[885000] LFSR_out=0xf2, enable=1, load=0
+[895000] LFSR_out=0xe5, enable=1, load=0
+[905000] LFSR_out=0xcb, enable=1, load=0
+[915000] LFSR_out=0x97, enable=1, load=0
+[925000] READ:  Addr=0xc, Data=0x97
+[925000] LFSR_out=0x2f, enable=1, load=0
+
+--- Test 4: Different Configuration ---
+[935000] WRITE START: Addr=0x0, Data=0x00
+[935000] LFSR_out=0x5e, enable=1, load=0
+[945000] LFSR_out=0xbc, enable=1, load=0
+[955000] LFSR_out=0x78, enable=1, load=0
+[965000] WRITE DONE: Addr=0x0, Data=0x00, Resp=00
+[965000] LFSR_out=0xf0, enable=0, load=0
+[975000] WRITE START: Addr=0x4, Data=0x5a
+[975000] LFSR_out=0xf0, enable=0, load=0
+[985000] LFSR_out=0xf0, enable=0, load=0
+[995000] LFSR_out=0xf0, enable=0, load=0
+[1005000] WRITE DONE: Addr=0x4, Data=0x5a, Resp=00
+[1005000] LFSR_out=0xf0, enable=0, load=0
+[1015000] WRITE START: Addr=0x8, Data=0x8e
+[1015000] LFSR_out=0xf0, enable=0, load=0
+[1025000] LFSR_out=0xf0, enable=0, load=0
+[1035000] LFSR_out=0xf0, enable=0, load=0
+[1045000] WRITE DONE: Addr=0x8, Data=0x8e, Resp=00
+[1045000] LFSR_out=0xf0, enable=0, load=0
+[1055000] WRITE START: Addr=0x0, Data=0x02
+[1055000] LFSR_out=0xf0, enable=0, load=0
+[1065000] LFSR_out=0xf0, enable=0, load=0
+[1075000] LFSR_out=0xf0, enable=0, load=0
+[1085000] WRITE DONE: Addr=0x0, Data=0x02, Resp=00
+[1085000] LFSR_out=0xf0, enable=0, load=1
+[1095000] LFSR_out=0x5a, enable=0, load=1
+[1105000] LFSR_out=0x5a, enable=0, load=1
+[1115000] WRITE START: Addr=0x0, Data=0x01
+[1115000] LFSR_out=0x5a, enable=0, load=1
+[1125000] LFSR_out=0x5a, enable=0, load=1
+[1135000] LFSR_out=0x5a, enable=0, load=1
+[1145000] WRITE DONE: Addr=0x0, Data=0x01, Resp=00
+[1145000] LFSR_out=0x5a, enable=1, load=0
+[1155000] LFSR_out=0xb4, enable=1, load=0
+[1165000] LFSR_out=0x68, enable=1, load=0
+[1175000] LFSR_out=0xd1, enable=1, load=0
+[1185000] LFSR_out=0xa3, enable=1, load=0
+[1195000] READ:  Addr=0xc, Data=0xa3
+[1195000] LFSR_out=0x46, enable=1, load=0
+[1205000] LFSR_out=0x8c, enable=1, load=0
+[1215000] LFSR_out=0x19, enable=1, load=0
+[1225000] LFSR_out=0x33, enable=1, load=0
+[1235000] LFSR_out=0x67, enable=1, load=0
+[1245000] READ:  Addr=0xc, Data=0x67
+[1245000] LFSR_out=0xce, enable=1, load=0
+[1255000] LFSR_out=0x9c, enable=1, load=0
+[1265000] LFSR_out=0x39, enable=1, load=0
+[1275000] LFSR_out=0x73, enable=1, load=0
+[1285000] LFSR_out=0xe7, enable=1, load=0
+[1295000] READ:  Addr=0xc, Data=0xe7
+[1295000] LFSR_out=0xcf, enable=1, load=0
+[1305000] LFSR_out=0x9e, enable=1, load=0
+[1315000] LFSR_out=0x3c, enable=1, load=0
+[1325000] LFSR_out=0x78, enable=1, load=0
+[1335000] LFSR_out=0xf1, enable=1, load=0
+[1345000] READ:  Addr=0xc, Data=0xf1
+[1345000] LFSR_out=0xe3, enable=1, load=0
+[1355000] LFSR_out=0xc6, enable=1, load=0
+[1365000] LFSR_out=0x8d, enable=1, load=0
+[1375000] LFSR_out=0x1b, enable=1, load=0
+[1385000] LFSR_out=0x36, enable=1, load=0
+[1395000] READ:  Addr=0xc, Data=0x36
+[1395000] LFSR_out=0x6c, enable=1, load=0
+
+=== Test Complete ===
+[1405000] LFSR_out=0xd8, enable=1, load=0
+[1415000] LFSR_out=0xb0, enable=1, load=0
+[1425000] LFSR_out=0x61, enable=1, load=0
+[1435000] LFSR_out=0xc2, enable=1, load=0
+all.v:456: $finish called at 1445000 (1ps)
+[1445000] LFSR_out=0x84, enable=1, load=0
