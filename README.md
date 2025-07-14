@@ -1,4 +1,4 @@
-#  Configurable LFSR Peripheral (RTL to GDSII)
+#  Configurable LFSR Peripheral (RTL to GDS)
 
 This project implements a **4-bit configurable LFSR-based pseudo-random number generator** as a **memory-mapped AXI-Lite peripheral**, taken from **Verilog RTL all the way to GDSII** using open-source tools like **Yosys**, **OpenLane**, **Magic**, and **KLayout**.
 
